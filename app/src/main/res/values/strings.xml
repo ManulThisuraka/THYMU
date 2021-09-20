@@ -43,4 +43,5 @@
     <string name="hint_account">"Ex - 077 257 0000 / 03568458269 "</string>
     <string name="txt_renew">Renewal Period</string>
     <string name="txt_hint_renew">7 Days/ 10 Days/ 14 Days/ 30 Days</string>
+    <string name="notReg">Not registered yet</string>
 </resources>
