@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginui">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView10"
@@ -63,8 +63,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etLoginEmail"
         android:layout_width="315dp"
         android:layout_height="50dp"
         android:layout_marginTop="52dp"
@@ -78,11 +78,11 @@
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName11"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etLoginPass"
         android:layout_width="315dp"
         android:layout_height="50dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="72dp"
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="@string/text_hint_password"
@@ -91,42 +91,28 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView10"
         app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+        app:layout_constraintTop_toBottomOf="@+id/etLoginEmail" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnLogin"
         android:layout_width="315sp"
         android:layout_height="50sp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="88dp"
         android:background="@drawable/background_btn"
         android:text="@string/btn_submit_log"
         app:layout_constraintEnd_toEndOf="@+id/imageView10"
         app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+        app:layout_constraintTop_toBottomOf="@+id/etLoginPass" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvRegisterHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="@string/forgot_pass"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/notReg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="@string/text_register"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
