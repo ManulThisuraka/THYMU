@@ -49,7 +49,6 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-
     private void createUser() {
         String email = etRegEmail.getText().toString();
         String password = etRegPassword.getText().toString();
