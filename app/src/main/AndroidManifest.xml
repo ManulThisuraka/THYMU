@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.thymu">
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,8 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
-            android:name=".add_new_expenses"
+            android:name=".ViewExpense"
             android:exported="true" />
+        <activity
+            android:name=".AddExpense"
+            android:exported="true"
+            android:label="@string/title_activity_geek"
+            android:theme="@style/Theme.THYMU.NoActionBar" />
         <activity
             android:name=".view_expenses"
             android:exported="true" />
