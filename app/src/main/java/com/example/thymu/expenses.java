@@ -22,7 +22,7 @@ public class expenses extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(expenses.this, view_expenses.class);
+                Intent intent = new Intent(expenses.this, MainMain.class);
                 startActivity(intent);
             }
         });
