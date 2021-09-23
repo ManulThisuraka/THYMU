@@ -3,22 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_add_expense.xml" value="0.20555555555555555" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_add_new_expenses.xml" value="0.33" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_categories.xml" value="0.3518987341772152" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_expenses.xml" value="0.4276923076923077" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_home.xml" value="0.2836990595611285" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_insert_medicine.xml" value="0.2" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_login.xml" value="0.3518987341772152" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_register.xml" value="0.3518987341772152" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_update_medicine.xml" value="0.33" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_view_expenses.xml" value="0.5" />
+        <entry key="..\:/THYMU/app/src/main/res/layout/activity_view_medicine.xml" value="0.2" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/drawable/background_btn.xml" value="0.2942708333333333" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/drawable/background_expenses.xml" value="0.2942708333333333" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/drawable/floating_action_button.xml" value="0.2942708333333333" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/drawable/roundedconers.xml" value="0.2942708333333333" />
-        <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_add_expense.xml" value="0.2" />
-        <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_add_expenses.xml" value="0.1" />
-        <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_add_new_expenses.xml" value="0.25" />
+        <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_add_new_expenses.xml" value="0.2" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_categories.xml" value="0.33" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_expenses.xml" value="0.25" />
-        <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_geek.xml" value="0.278125" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_login.xml" value="0.223731884057971" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_loginui.xml" value="0.18" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_register.xml" value="0.2" />
-        <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_view_expense.xml" value="0.278125" />
         <entry key="..\:/Users/manul/AndroidStudioProjects/THYMU/app/src/main/res/layout/activity_view_expenses.xml" value="0.22" />
       </map>
     </option>

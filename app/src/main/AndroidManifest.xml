@@ -3,7 +3,6 @@
     package="com.example.thymu">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,13 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
-            android:name=".ViewExpense"
+            android:name=".updateMedicine"
+            android:exported="true" />
+        <activity
+            android:name=".InsertMedicine"
+            android:exported="true" />
+        <activity
+            android:name=".viewMedicine"
             android:exported="true" />
         <activity
             android:name=".AddExpense"
-            android:exported="true"
-            android:label="@string/title_activity_geek"
-            android:theme="@style/Theme.THYMU.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".view_expenses"
             android:exported="true" />
