@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
-            android:name=".MainMain"
+            android:name=".viewExpenseMain"
             android:exported="true" />
         <activity
             android:name=".AddExpense"

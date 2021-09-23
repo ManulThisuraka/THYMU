@@ -1,8 +1,7 @@
 package com.example.thymu;
 
 
-public class person
-{
+public class person {
     // Variable to store data corresponding
     // to firstname keyword in database
     private String firstname;
@@ -17,31 +16,31 @@ public class person
 
     // Mandatory empty constructor
     // for use of FirebaseUI
-    public person() {}
+    public person() {
+    }
 
     // Getter and setter method
-    public String getFirstname()
-    {
+    public String getFirstname() {
         return firstname;
     }
-    public void setFirstname(String firstname)
-    {
+
+    public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
-    public String getLastname()
-    {
+
+    public String getLastname() {
         return lastname;
     }
-    public void setLastname(String lastname)
-    {
+
+    public void setLastname(String lastname) {
         this.lastname = lastname;
     }
-    public int getAge()
-    {
+
+    public int getAge() {
         return age;
     }
-    public void setAge(int age)
-    {
+
+    public void setAge(int age) {
         this.age = age;
     }
 }
