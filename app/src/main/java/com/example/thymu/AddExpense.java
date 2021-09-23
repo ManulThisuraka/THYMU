@@ -75,7 +75,7 @@ public class AddExpense extends AppCompatActivity {
                     // data to our database.
                     addDatatoFirebase(bill, account, nextdate);
                 }
-            }
+        }
         });
     }
 
