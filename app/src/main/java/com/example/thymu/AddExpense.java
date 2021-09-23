@@ -54,7 +54,8 @@ public class AddExpense extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance("https://thymu-9c71c-default-rtdb.asia-southeast1.firebasedatabase.app/");
 
         // below line is used to get reference for our database.
-        databaseReference = firebaseDatabase.getReference().child("DataExpenses");
+        String uid = FirebaseAuth.getInstance().getUid();
+        databaseReference = firebaseDatabase.getReference().child("DataExpenses").child(uid);
 
         // initializing our object
         // class variable.
@@ -68,6 +69,7 @@ public class AddExpense extends AppCompatActivity {
             public void onClick(View v) {
 
                 // getting text from our edittext fields.
+
                 String bill = billType.getText().toString();
                 String account = accNumber.getText().toString();
                 String nextdate = nextBillDate.getText().toString();
