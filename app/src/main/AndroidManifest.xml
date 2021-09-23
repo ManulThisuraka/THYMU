@@ -16,6 +16,17 @@
             android:name=".viewExpenseMain"
             android:exported="true" />
         <activity
+            android:name=".InsertMedicine"
+            android:exported="true" />
+        <activity
+            android:name=".updateMedicine"
+            android:exported="true" />
+        <activity
+            android:name=".viewMedicine"
+            android:exported="true" />
+
+
+        <activity
             android:name=".AddExpense"
             android:exported="true"
             android:label="@string/title_activity_geek"
