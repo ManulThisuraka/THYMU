@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 public class categories extends AppCompatActivity {
 
     public ImageButton img_btn;
+    public ImageButton btn_med;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +28,23 @@ public class categories extends AppCompatActivity {
         });
 
 
+        btn_med = findViewById(R.id.btnidmed);
+        btn_med.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(categories.this, viewMedicine.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 }
+
+
+
+
+
+
+
+

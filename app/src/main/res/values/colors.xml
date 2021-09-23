@@ -13,4 +13,8 @@
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
     <color name="primary_expenses">#F5F2AD</color>
+    <color name="light_green">#8FEAA7</color>
+
+    <color name="green">#46F574</color>
+
 </resources>
