@@ -16,4 +16,7 @@
     <color name="bg_color">#B5E6EC</color>
     <color name="bg_colorX">#6BB0FF</color>
 
+    <color name="light_green">#8FEAA7</color>
+    <color name="green">#46F574</color>
+
 </resources>

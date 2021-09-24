@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -47,7 +49,8 @@ public class AddExpense extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance("https://thymu-9c71c-default-rtdb.asia-southeast1.firebasedatabase.app/");
 
         // below line is used to get reference for our database.
-        databaseReference = firebaseDatabase.getReference().child("DataExpenses");
+        String uid = FirebaseAuth.getInstance().getUid();
+        databaseReference = firebaseDatabase.getReference().child("DataExpenses").child(uid);
 
         // initializing our object
         // class variable.
