@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.thymu.FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/firstFragment"
         tools:layout="@layout/fragment_first">
 
         <action
@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.thymu.SecondFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/secondFragment"
         tools:layout="@layout/fragment_second">
 
         <action

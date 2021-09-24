@@ -17,11 +17,11 @@ public class categories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
-        img_btn = findViewById(R.id.imageButton);
+        img_btn = findViewById(R.id.img_btn_water);
         img_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(categories.this, expenses.class);
+                Intent intent = new Intent(categories.this, weight.class);
                 startActivity(intent);
             }
         });

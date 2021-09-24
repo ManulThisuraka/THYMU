@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_colorX"
+    tools:context=".wakeup">
+
+    <Button
+        android:id="@+id/btn_wakeupTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="popTimepicker"
+        android:text="@string/btn_wakeupTime"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/design_default_color_background"
+        app:layout_constraintBottom_toTopOf="@+id/btn_wakeup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <TextView
+        android:id="@+id/tv_water3"
+        android:layout_width="222dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/tv_water"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_enter_wakeup"
+        android:layout_width="172dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_enter_wakeup"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_water3" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="234dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wakeup"
+        app:srcCompat="@drawable/wakeup" />
+
+    <TextView
+        android:id="@+id/tv_wakeup"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/tv_wakeup"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_enter_wakeup" />
+
+    <Button
+        android:id="@+id/btn_wakeup"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/btn_wakeup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -44,13 +44,20 @@
     <string name="txt_renew">Renewal Period</string>
     <string name="txt_hint_renew">7 Days/ 10 Days/ 14 Days/ 30 Days</string>
     <string name="notReg">Not registered yet</string>
-    <string name="title_activity_geek">geek</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tv_water">Water</string>
+    <string name="tv_enter_weight">Enter Your Weight</string>
+    <string name="tv_enter_exercise">How much do you workout per day?</string>
+    <string name="tv_enter_wakeup">Please Enter Your...</string>
+    <string name="tv_wakeup">WakeUP Time</string>
+    <string name="btn_wakeupTime">Enter Time</string>
+    <string name="btn_wakeup">OK</string>
+    <string name="tv_bedtime">BedTIme</string>
+    <string name="btn_weight">OK</string>
+    <string name="btn_workout">OK</string>
+    <string name="firstFragment" />
+    <string name="secondFragment" />
+    <string name="btn_bedTime">Enter Time</string>
+    <string name="tab_item1">MyPlan</string>
+    <string name="tb_item2">history</string>
+    <string name="tb_item3">Settings</string>
 </resources>
