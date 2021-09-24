@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
@@ -26,7 +27,8 @@ public class viewExpenseMain extends AppCompatActivity {
 
         // Create a instance of the database and get
         // its reference
-        databaseReference = FirebaseDatabase.getInstance("https://thymu-9c71c-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference().child("DataExpenses");
+        String uid = FirebaseAuth.getInstance().getUid();
+        databaseReference = FirebaseDatabase.getInstance("https://thymu-9c71c-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference().child("DataExpenses").child(uid);
 
         recyclerView = findViewById(R.id.recycler1);
 
