@@ -25,7 +25,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView33"
         app:layout_constraintEnd_toStartOf="@+id/imageView31"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/ellipse1" />
+        app:srcCompat="@drawable/ellipse9" />
 
     <ImageView
         android:id="@+id/imageView33"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView31"
         app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ellipse2" />
+        app:srcCompat="@drawable/ellipse10" />
 
     <TextView
         android:id="@+id/textView5"
@@ -74,7 +74,7 @@
         android:layout_marginEnd="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/wavy1" />
+        app:srcCompat="@drawable/wavy" />
 
     <Button
         android:id="@+id/button2"

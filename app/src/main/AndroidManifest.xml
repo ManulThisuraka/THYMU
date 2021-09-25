@@ -28,6 +28,22 @@
             android:name=".viewMedicine"
             android:exported="true" />
 
+        <activity
+            android:name=".weight"
+            android:exported="true" />
+        <activity
+            android:name=".exercise"
+            android:exported="true" />
+        <activity
+            android:name=".wakeup"
+            android:exported="true" />
+        <activity
+            android:name=".sleeping"
+            android:exported="true" />
+        <activity
+            android:name=".myPlan"
+            android:exported="true" />
+
 
         <activity
             android:name=".AddExpense"

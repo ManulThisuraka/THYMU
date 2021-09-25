@@ -52,6 +52,7 @@
     <string name="previous">Previous</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
     <string name="tv_water">Water</string>
     <string name="tv_enter_weight">Enter Your Weight</string>
     <string name="tv_enter_exercise">How much do you workout per day?</string>
@@ -68,4 +69,22 @@
     <string name="tab_item1">MyPlan</string>
     <string name="tb_item2">history</string>
     <string name="tb_item3">Settings</string>
+
+
+    <string name="sub_medicine_title">Insert or view  your medicines</string>
+    <string name="btn_view_medcine">VIEW MEDICINES</string>
+    <string name="btn_add_medcine">Add new medicines</string>
+    <string name="insert_titile_medi">Insert medicine information</string>
+    <string name="title_medicine">Name of the drug</string>
+    <string name="input_name_medicine">Name of the medicine</string>
+    <string name="input_resaon">What are  you taking for it ?</string>
+    <string name="input_healthcondition">Type your condition</string>
+    <string name="input_form">Pill/Powder/Drops/Inhaler</string>
+    <string name="input_formMEdi">What form is the drug ?</string>
+    <string name="input_time">At what time of day do you take your med?</string>
+    <string name="input_boolean">yes/no</string>
+    <string name="input_timeMEdi">yes/no</string>
+    <string name="input_time_medi">yes or no</string>
+    <string name="input_day_time">Morning/Noon/Night</string>
+    <string name="btn_submit_add">Submit</string>
 </resources>
