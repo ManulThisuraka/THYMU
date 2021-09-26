@@ -2,30 +2,23 @@ package com.example.thymu;
 
 public class waterPlan {
 
-    private Integer weight;
-    private Integer workoutHrs;
+    private String weight;
+    private String workoutHrs;
     private CharSequence wakeupTime;
     private CharSequence bedTime;
+    private double drinkTarget;
 
     public waterPlan() {
 
     }
 
-    public Integer getWeight(){
-
-        return weight;
+    public String getWeight(){ return weight;
     }
-    public void setWeight(Integer weight){
-
-        this.weight = weight;
+    public void setWeight(String weight){ this.weight = weight;
     }
-    public  Integer getWorkoutHrs(){
-
-        return workoutHrs;
+    public  String getWorkoutHrs(){ return workoutHrs;
     }
-    public void setWorkoutHrs(Integer workoutHrs){
-
-        this.workoutHrs = workoutHrs;
+    public void setWorkoutHrs(String workoutHrs){ this.workoutHrs = workoutHrs;
     }
     public CharSequence getWakeupTime(){
 
@@ -43,4 +36,5 @@ public class waterPlan {
 
         this.bedTime = bedTime;
     }
+
 }

@@ -48,6 +48,8 @@
             android:layout_height="wrap_content"
             android:text="@string/tb_item3" />
     </com.google.android.material.tabs.TabLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

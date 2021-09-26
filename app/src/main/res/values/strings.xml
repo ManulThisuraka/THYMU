@@ -53,19 +53,9 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <string name="tv_water">Water</string>
-    <string name="tv_enter_weight">Enter Your Weight</string>
-    <string name="tv_enter_exercise">How much do you workout per day?</string>
-    <string name="tv_enter_wakeup">Please Enter Your...</string>
-    <string name="tv_wakeup">WakeUP Time</string>
-    <string name="btn_wakeupTime">Enter Time</string>
-    <string name="btn_wakeup">OK</string>
-    <string name="tv_bedtime">BedTIme</string>
-    <string name="btn_weight">OK</string>
-    <string name="btn_workout">OK</string>
+
     <string name="firstFragment" />
     <string name="secondFragment" />
-    <string name="btn_bedTime">Enter Time</string>
     <string name="tab_item1">MyPlan</string>
     <string name="tb_item2">history</string>
     <string name="tb_item3">Settings</string>
@@ -87,4 +77,21 @@
     <string name="input_time_medi">yes or no</string>
     <string name="input_day_time">Morning/Noon/Night</string>
     <string name="btn_submit_add">Submit</string>
+
+    <string name="et_weight" />
+    <string name="tv_weight">Your Weight/kg</string>
+    <string name="tv_waterPlan">Water Plan</string>
+    <string name="tv_workout">How Many Minutes Do you Workout Per Day?</string>
+    <string name="et_workout" />
+    <string name="btn_wakeUp">wakeup time</string>
+    <string name="btn_sleeping">bed time</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_wakeUP">wakeup time</string>
+    <string name="tv_wakeup">WakeUpTime</string>string>
+    <string name="tv_bed">BedTime</string>
+    <string name="tv_wake">weight:</string>
+    <string name="tv_work">Workout minutes per day:</string>
+    <string name="tv_waketime">Wakeup Time</string>
+
+
 </resources>
