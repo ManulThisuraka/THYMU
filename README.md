@@ -114,7 +114,7 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contributors
-<p> IT20074654 – Manul Thisuraka - https://github.com/ManulThisuraka [ Expense Management ] </p>
+<p> IT20163754 – Manul Thisuraka - https://github.com/ManulThisuraka [ Expense Management ] </p>
 <p> IT20157500 - Dulanga Kandanaarachchi - https://github.com/DulangaSK [Cash Flow Management] </p>
-<p> IT20120016 – Ashani Isurika - https://github.com/Isurika00 [ Hydration Management ] </p>
-<p> IT20174330 – Kanjana Epitawatta - https://github.com/kanjanaepitawatta [ Medicine Management] </p>
+<p> IT20187828 – Ashani Isurika - https://github.com/Isurika00 [ Hydration Management ] </p>
+<p> IT20085094 – Kanjana Epitawatta - https://github.com/kanjanaepitawatta [ Medicine Management] </p>
