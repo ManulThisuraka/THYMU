@@ -8,10 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class categories extends AppCompatActivity {
 
     public ImageButton img_btn;
     public ImageButton btn_med;
+
+    public Button btnLogout;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +41,21 @@ public class categories extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnLogout = findViewById(R.id.btnLogout2);
+        mAuth = FirebaseAuth.getInstance();
+        btnLogout.setOnClickListener(view -> {
+            mAuth.signOut();
+            startActivity(new Intent(categories.this, LoginActivity.class));
+        });
+
+
+
+
+
+
+
+
     }
 
 

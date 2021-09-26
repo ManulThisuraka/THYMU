@@ -46,10 +46,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/curvestrongeblue" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
         android:text="@string/title"
         android:textColor="@color/black"
         android:textSize="30dp"
@@ -60,34 +62,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etRegEmail"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="@string/text_hint"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etRegPass"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="@string/text_hint_password"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etRegEmail" />
 
@@ -95,7 +94,7 @@
         android:id="@+id/btnRegister"
         android:layout_width="315dp"
         android:layout_height="50dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/background_btn"
         android:text="@string/btn_submit_login"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
@@ -118,33 +117,37 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="36dp"
         android:text="Already registered"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/tvLoginHere"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tvLoginHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="36dp"
-        android:text="Login here"
+        android:layout_marginBottom="16dp"
+        android:text="Login Here"
         android:textColor="@color/teal_700"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="163dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thymulogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
