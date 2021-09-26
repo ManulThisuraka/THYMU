@@ -1,6 +1,5 @@
 package com.example.thymu;
 
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,7 +24,6 @@ public class LoginActivity extends AppCompatActivity {
     TextInputEditText etLoginEmail;
     TextInputEditText etLoginPassword;
     TextView tvRegisterHere;
-
     FirebaseAuth mAuth;
 
     @Override
@@ -37,7 +35,6 @@ public class LoginActivity extends AppCompatActivity {
         etLoginPassword = findViewById(R.id.etLoginPass);
         tvRegisterHere = findViewById(R.id.tvRegisterHere);
         btnLogin = findViewById(R.id.btnLogin);
-
         mAuth = FirebaseAuth.getInstance();
 
         btnLogin.setOnClickListener(view -> {
@@ -46,13 +43,11 @@ public class LoginActivity extends AppCompatActivity {
         tvRegisterHere.setOnClickListener(view -> {
             startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
         });
-
     }
 
     private void loginUser() {
         String email = etLoginEmail.getText().toString();
         String password = etLoginPassword.getText().toString();
-
         if (TextUtils.isEmpty(email)) {
             etLoginEmail.setError("Email cannot be empty");
             etLoginEmail.requestFocus();
@@ -65,11 +60,9 @@ public class LoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "User Logged in successfully", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(LoginActivity.this, home.class));
+                        startActivity(new Intent(LoginActivity.this, categories.class));
                         String uid = FirebaseAuth.getInstance().getUid();
-
-                        Log.d("abc",uid);
-
+                        Log.d("abc", uid);
                     } else {
                         Toast.makeText(LoginActivity.this, "Log in Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }

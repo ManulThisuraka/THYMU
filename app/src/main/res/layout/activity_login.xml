@@ -53,13 +53,13 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="144dp"
         android:text="@string/title_login"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView10"
-        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintHorizontal_bias="0.395"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
@@ -67,14 +67,14 @@
         android:id="@+id/etLoginEmail"
         android:layout_width="315dp"
         android:layout_height="50dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="@string/text_hint"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -82,14 +82,14 @@
         android:id="@+id/etLoginPass"
         android:layout_width="315dp"
         android:layout_height="50dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="@string/text_hint_password"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/imageView10"
-        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etLoginEmail" />
 
@@ -97,11 +97,11 @@
         android:id="@+id/btnLogin"
         android:layout_width="315sp"
         android:layout_height="50sp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/background_btn"
         android:text="@string/btn_submit_log"
         app:layout_constraintEnd_toEndOf="@+id/imageView10"
-        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/etLoginPass" />
 
@@ -114,5 +114,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="163dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thymulogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

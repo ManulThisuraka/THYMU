@@ -34,7 +34,7 @@
     <string name="title_view_sub_expenses">Edit or delete your previously saved bills</string>
     <string name="edit_expenses">Edit</string>
     <string name="delete_expenses">Delete</string>
-    <string name="remind_expenses_title">Remind me...</string>
+
     <string name="billing_type">Billing Type</string>
     <string name="txt_hint_type">Bill/ Subscription/ Lease/ Rent/ Package</string>
     <string name="txt_date_add">Billing Date</string>
@@ -43,9 +43,9 @@
     <string name="hint_account">"Ex - 077 257 0000 / 03568458269 "</string>
     <string name="txt_renew">Renewal Period</string>
     <string name="txt_hint_renew">7 Days/ 10 Days/ 14 Days/ 30 Days</string>
-    <string name="notReg">Not registered yet</string>
+    <string name="notReg">Not Registered Yet</string>
     <string name="title_activity_geek">geek</string>
-    <!-- Strings used for fragments for navigation -->
+
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
@@ -53,12 +53,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-
-
-
-
-
 
 
     <string name="sub_medicine_title">Insert or view  your medicines</string>
@@ -77,4 +71,13 @@
     <string name="input_time_medi">yes or no</string>
     <string name="input_day_time">Morning/Noon/Night</string>
     <string name="btn_submit_add">Submit</string>
+    <string name="btnDelData">Delete Data</string>
+    <string name="img_btn_cash">Cash Flow</string>
+    <string name="subTitleAdd">REMIND MY BILLS</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="expenseTitle">"ADD NEW ACCOUNT OR VIEW PREVIOUS "</string>
+
 </resources>

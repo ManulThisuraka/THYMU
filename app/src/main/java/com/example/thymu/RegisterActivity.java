@@ -19,18 +19,15 @@ import com.google.firebase.auth.FirebaseAuth;
 public class RegisterActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-
     public Button btnRegister;
     TextInputEditText etRegEmail;
     TextInputEditText etRegPassword;
     TextView tvLoginHere;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
         etRegEmail = findViewById(R.id.etRegEmail);
         etRegPassword = findViewById(R.id.etRegPass);
         tvLoginHere = findViewById(R.id.tvLoginHere);
@@ -38,21 +35,17 @@ public class RegisterActivity extends AppCompatActivity {
 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-
         btnRegister.setOnClickListener(view -> {
             createUser();
         });
-
         tvLoginHere.setOnClickListener(view -> {
             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
         });
-
     }
 
     private void createUser() {
         String email = etRegEmail.getText().toString();
         String password = etRegPassword.getText().toString();
-
         if (TextUtils.isEmpty(email)) {
             etRegEmail.setError("Email cannot be empty");
             etRegEmail.requestFocus();

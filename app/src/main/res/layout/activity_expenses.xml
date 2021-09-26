@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ath68" />
+        app:srcCompat="@drawable/ath68"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView18"
@@ -26,25 +27,12 @@
         android:layout_marginTop="52dp"
         android:text="@string/title_expenses"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
-        tools:text="@string/sub_title_expenses" />
 
     <ImageView
         android:id="@+id/imageView18"
@@ -55,7 +43,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19"
-        app:srcCompat="@drawable/wavy" />
+        app:srcCompat="@drawable/wavy"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView19"
@@ -66,13 +55,16 @@
         app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView22"
-        app:srcCompat="@drawable/ellipse10" />
+        app:srcCompat="@drawable/ellipse10"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toStartOf="@+id/imageView18"
         app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toStartOf="@+id/imageView15"
@@ -102,6 +94,29 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/btnDelData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textColor="#33691E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:text="@string/expenseTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

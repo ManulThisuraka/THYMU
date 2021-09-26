@@ -13,9 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
-            android:name=".test"
-            android:exported="true" />
-        <activity
             android:name=".viewExpenseMain"
             android:exported="true" />
         <activity
@@ -27,8 +24,6 @@
         <activity
             android:name=".viewMedicine"
             android:exported="true" />
-
-
         <activity
             android:name=".AddExpense"
             android:exported="true"
@@ -41,7 +36,6 @@
             android:name=".expenses"
             android:exported="true" />
         <activity android:name=".categories" />
-        <activity android:name=".home" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity">
             <intent-filter>
