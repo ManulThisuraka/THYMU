@@ -1,6 +1,5 @@
 <h1 align = "center"> <b> THYMU Mobile Appliction </b> </h1>
-<p align="center"> <img src = "https://user-images.githubusercontent.com/88134073/134820723-fa1ba2d6-0942-4323-bfec-9ff0332e99a8.jpg
-" width = "120" height = "120" /> </p>
+<p align="center"> <img src = "https://user-images.githubusercontent.com/88134073/134821338-f4c36bfd-f8a3-43d5-a3a2-1f32e05de508.jpg" width = "120" height = "120" /> </p>
 
 <p> THYMU is a reminder app with a twist - it notifies you of your monthly bills right when they're due, your water consumption every day, personal medication reminders, and even reminds you when it's that time of the month. With all the stress in our lives today, doesn't it feel good to have someone help remind us what needs to get done?</p>
 
