@@ -54,6 +54,8 @@ public class expenses extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     for (DataSnapshot data : dataSnapshot.getChildren()) {
+
+
                         data.getRef().removeValue();
                         Intent intent = new Intent(expenses.this, AddExpense.class);
                         startActivity(intent);

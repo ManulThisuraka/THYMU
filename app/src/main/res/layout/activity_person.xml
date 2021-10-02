@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.cardview.widget.CardView
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,7 +17,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/cardviewgrad">
+        android:background="@drawable/cardbackground"
+        android:backgroundTint="#9A9797"
+        android:backgroundTintMode="screen">
 
         <TextView
             android:id="@+id/textView1"
@@ -28,58 +30,65 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="Billing type: "
+            android:textColor="@color/black"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/textView2"
             app:layout_constraintEnd_toStartOf="@+id/bill_type"
+            app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/bill_type"
-            android:layout_width="0dp"
+            android:layout_width="175dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
             android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/acc_num"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView1"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="66dp"
+            android:layout_width="wrap_content"
             android:layout_height="22dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:text="Account Number:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
         <TextView
             android:id="@+id/acc_num"
-            android:layout_width="252dp"
-            android:layout_height="17dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
             android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bill_type" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:text="Next Bill Date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,19 +97,19 @@
 
         <TextView
             android:id="@+id/next_bill"
-            android:layout_width="251dp"
-            android:layout_height="21dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.958"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/acc_num"
-            app:layout_constraintVertical_bias="0.081" />
+            app:layout_constraintVertical_bias="0.093" />
 
         <Button
             android:id="@+id/idbtnEdit"
@@ -109,9 +118,23 @@
             android:layout_marginStart="248dp"
             android:layout_marginTop="8dp"
             android:text="@string/edit_expenses"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/idbtnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="86dp"
+            android:text="@string/recycleDel"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/idbtnEdit"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>
