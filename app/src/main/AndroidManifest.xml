@@ -13,13 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
+            android:name=".waterTest"
+            android:exported="true" />
+        <activity
+            android:name=".waterCard"
+            android:exported="true" />
+        <activity
+            android:name=".myPlan"
+            android:exported="true" />
+        <activity
             android:name=".waterView"
             android:exported="true" />
         <activity
             android:name=".waterInsert"
-            android:exported="true" />
-        <activity
-            android:name=".myPlan"
             android:exported="true" />
         <activity
             android:name=".test"

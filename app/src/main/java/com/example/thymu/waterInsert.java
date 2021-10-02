@@ -73,8 +73,8 @@ public class waterInsert extends AppCompatActivity {
 
                 String weight = et_weight.getText().toString();
                 String workout = et_workout.getText().toString();
-                CharSequence wakeupTime = btn_wakeUP.getText();
-                CharSequence bedTime = btn_sleeping.getText();
+                String wakeupTime = btn_wakeUP.getText().toString();
+                String bedTime = btn_sleeping.getText().toString();
 
                 // below line is for checking weather the
                 // edittext fields are empty or not.
@@ -87,14 +87,14 @@ public class waterInsert extends AppCompatActivity {
                     // data to our database.
                     addDatatoFirebase(weight,workout,wakeupTime,bedTime);
 
-                    Intent intent = new Intent(waterInsert.this, myPlan.class);
+                    Intent intent = new Intent(waterInsert.this, waterView.class);
                     startActivity(intent);
                 }
             }
         });
     }
 
-    public void addDatatoFirebase(String weight, String workout, CharSequence wakeupTime,CharSequence bedTime) {
+    public void addDatatoFirebase(String weight, String workout, String wakeupTime,String bedTime) {
 
         water_plan.setWeight(weight);
         water_plan.setWorkoutHrs(workout);
@@ -121,7 +121,7 @@ public class waterInsert extends AppCompatActivity {
                     }
                 };
 
-                int style = AlertDialog.THEME_DEVICE_DEFAULT_DARK;
+                int style = AlertDialog.THEME_DEVICE_DEFAULT_LIGHT;
 
                 TimePickerDialog timePickerDialog = new TimePickerDialog(this, style, onTimeSetListener, hour, minute, true);
                 timePickerDialog.show();

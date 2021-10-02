@@ -41,10 +41,11 @@
     <!--Button for adding data to Firebase-->
     <Button
         android:id="@+id/idBtnSendData"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
         android:layout_below="@id/idEdtEmployeeAddress"
-        android:layout_margin="10dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginBottom="10dp"
         android:text="Add employee details"
         android:textAllCaps="false" />
 

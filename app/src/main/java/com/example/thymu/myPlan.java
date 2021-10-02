@@ -13,7 +13,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class myPlan extends AppCompatActivity {
 
-
     private RecyclerView recyclerView;
     waterAdapter adapter; // Create Object of the Adapter class
     DatabaseReference databaseReference; // Create object of the
@@ -24,14 +23,12 @@ public class myPlan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_plan);
 
-
-
         // Create a instance of the database and get
         // its reference
         String uid = FirebaseAuth.getInstance().getUid();
         databaseReference = FirebaseDatabase.getInstance("https://thymu-9c71c-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference().child("waterPlan").child(uid);
 
-        recyclerView = findViewById(R.id.tb_item3);
+        recyclerView = findViewById(R.id.recycler2);
 
         // To display the Recycler view linearly
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

@@ -6,50 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".myPlan">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="403dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="-12dp"
-        android:layout_marginEnd="-12dp"
-        android:background="@color/bg_colorX"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler2"
+        android:layout_width="391dp"
+        android:layout_height="849dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
-        android:layout_width="407dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="-12dp"
-        android:layout_marginEnd="-12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tb_item1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tab_item1" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tb_item2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tb_item2" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tb_item3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tb_item3" />
-    </com.google.android.material.tabs.TabLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

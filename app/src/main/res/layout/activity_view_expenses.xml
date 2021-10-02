@@ -96,9 +96,9 @@
         android:id="@+id/imageView26"
         android:layout_width="340dp"
         android:layout_height="140dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="360dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6"
         app:srcCompat="@mipmap/expenses_view_mobile" />

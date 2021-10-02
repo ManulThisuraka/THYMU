@@ -92,6 +92,14 @@
     <string name="tv_wake">weight:</string>
     <string name="tv_work">Workout minutes per day:</string>
     <string name="tv_waketime">Wakeup Time</string>
+    <string name="tv_w">Weight</string>
+    <string name="tv_workmins">Workout Minutes Per day</string>
+    <string name="tv_wkup">Wakeup Time</string>
+    <string name="tv_wt">Weight</string>
+    <string name="tv_wkmins">Workout minutes per day</string>
+    <string name="tv_wk">Workout minuts per day</string>
+    <string name="tv_slp">Bed time</string>
+    <string name="btn_waterview">view profile</string>
 
 
 </resources>

@@ -56,7 +56,7 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
     public waterAdapter.waterViewholder
     onCreateViewHolder(@NonNull ViewGroup waterPlan,
                        int viewType) {
-        View view = LayoutInflater.from(waterPlan.getContext()).inflate(R.layout.activity_my_plan, waterPlan, false);
+        View view = LayoutInflater.from(waterPlan.getContext()).inflate(R.layout.activity_water_card, waterPlan, false);
         return new waterAdapter.waterViewholder(view);
     }
 
@@ -70,10 +70,10 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
         public waterViewholder(@NonNull View itemView) {
             super(itemView);
 
-            weight = itemView.findViewById(R.id.tv_weightx);
-            workout = itemView.findViewById(R.id.tv_work);
-            wakeupTime = itemView.findViewById(R.id.tv_wakeX);
-            bedTime = itemView.findViewById(R.id.tv_bedX);
+            weight = itemView.findViewById(R.id.tv_wtvalue);
+            workout = itemView.findViewById(R.id.tv_wkvalue);
+            wakeupTime = itemView.findViewById(R.id.tv_wkuptime);
+            bedTime = itemView.findViewById(R.id.tv_slptime);
         }
     }
 }

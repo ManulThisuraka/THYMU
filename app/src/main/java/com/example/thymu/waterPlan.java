@@ -4,8 +4,8 @@ public class waterPlan {
 
     private String weight;
     private String workoutHrs;
-    private CharSequence wakeupTime;
-    private CharSequence bedTime;
+    private String wakeupTime;
+    private String bedTime;
     private double drinkTarget;
 
     public waterPlan() {
@@ -20,11 +20,11 @@ public class waterPlan {
     }
     public void setWorkoutHrs(String workoutHrs){ this.workoutHrs = workoutHrs;
     }
-    public CharSequence getWakeupTime(){
+    public String getWakeupTime(){
 
         return wakeupTime;
     }
-    public void setWakeupTime(CharSequence wakeupTime){
+    public void setWakeupTime(String wakeupTime){
 
         this.wakeupTime = wakeupTime;
     }
@@ -32,7 +32,7 @@ public class waterPlan {
 
         return bedTime;
     }
-    public void setBedTime(CharSequence bedTime){
+    public void setBedTime(String bedTime){
 
         this.bedTime = bedTime;
     }
