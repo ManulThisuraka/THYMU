@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".waterTest"
             android:exported="true" />
         <activity
