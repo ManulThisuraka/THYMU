@@ -72,6 +72,7 @@
         android:hint="@string/text_hint"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -84,8 +85,9 @@
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="@string/text_hint_password"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:textAlignment="center"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etRegEmail" />
@@ -97,6 +99,7 @@
         android:layout_marginTop="80dp"
         android:background="@drawable/background_btn"
         android:text="@string/btn_submit_login"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/etRegPass" />

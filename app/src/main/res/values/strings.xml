@@ -71,7 +71,7 @@
     <string name="input_time_medi">yes or no</string>
     <string name="input_day_time">Morning/Noon/Night</string>
     <string name="btn_submit_add">Submit</string>
-    <string name="btnDelData">Delete Data</string>
+    <string name="btnDelData">Delete All Data</string>
     <string name="img_btn_cash">Cash Flow</string>
     <string name="subTitleAdd">REMIND MY BILLS</string>
     <string name="todo">TODO</string>
@@ -79,5 +79,6 @@
     <string name="todo2">TODO</string>
     <string name="todo3">TODO</string>
     <string name="expenseTitle">"ADD NEW ACCOUNT OR VIEW PREVIOUS "</string>
+    <string name="recycleDel">Delete</string>
 
 </resources>

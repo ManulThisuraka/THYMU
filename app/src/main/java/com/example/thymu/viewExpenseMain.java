@@ -22,11 +22,15 @@ public class viewExpenseMain extends AppCompatActivity {
     expenseAdpter adapter; // Create Object of the Adapter class
     DatabaseReference databaseReference; // Create object of the
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_main);
         String uid = FirebaseAuth.getInstance().getUid(); // Create a instance of the database and get
+
         databaseReference = FirebaseDatabase.getInstance("https://thymu-9c71c-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference().child("DataExpenses").child(uid); // its reference
         recyclerView = findViewById(R.id.recycler1);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));   // To display the Recycler view linearly
@@ -37,6 +41,7 @@ public class viewExpenseMain extends AppCompatActivity {
         adapter = new expenseAdpter(options);
         recyclerView.setAdapter(adapter);   // Connecting Adapter class with the Recycler view*/
     }
+
 
     @Override
     protected void onStart() {

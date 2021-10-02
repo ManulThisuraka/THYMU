@@ -72,7 +72,7 @@ public class AddExpense extends AppCompatActivity {
         dataExpenses.setBill_type(bill);
         dataExpenses.setAcc_num(account);
         dataExpenses.setNext_bill(nextdate);
-        dataExpenses.setPosition(FirebaseAuth.getInstance().getUid());
+        //dataExpenses.setPosition(FirebaseAuth.getInstance().getUid());
 
         DatabaseReference newref = databaseReference.push();
         Log.d("abc", newref.toString());
