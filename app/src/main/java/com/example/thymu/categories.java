@@ -28,7 +28,7 @@ public class categories extends AppCompatActivity {
         btn_water.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(categories.this, waterInsert.class);
+                Intent intent = new Intent(categories.this, waterView.class);
                 startActivity(intent);
             }
         });

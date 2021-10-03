@@ -4,132 +4,134 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
-    android:layout_marginTop="10dp"
+    android:layout_marginTop="50dp"
     android:layout_marginBottom="20dp"
     android:scrollbars="vertical"
+    app:cardBackgroundColor="@color/ash"
     app:cardCornerRadius="40dp"
+    app:layout_insetEdge="top"
     tools:context=".deleteData">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/cardviewgrad">
+        android:layout_width="379dp"
+        android:layout_height="337dp"
+        android:background="@drawable/waterdrop"
+        android:backgroundTint="#B5E6EC"
+        android:backgroundTintMode="screen">
 
         <TextView
             android:id="@+id/tv_wt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="103dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="8dp"
             android:text="@string/tv_wt"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tv_wk"
+            app:autoSizeTextType="uniform"
             app:layout_constraintEnd_toStartOf="@+id/tv_wtvalue"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_wtvalue"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="129dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="132dp"
             android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/tv_wkvalue"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_wt"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_wt"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/tv_wk"
-            android:layout_width="66dp"
-            android:layout_height="22dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="299dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
             android:text="@string/tv_wk"
             android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/tv_slp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_wt" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_wt"
+            app:layout_constraintVertical_bias="0.08" />
 
         <TextView
             android:id="@+id/tv_wkvalue"
-            android:layout_width="252dp"
-            android:layout_height="17dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="95dp"
+            android:layout_height="37dp"
             android:layout_marginEnd="16dp"
             android:text="TextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/tv_wk"
-            app:layout_constraintTop_toBottomOf="@+id/tv_wtvalue" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_wk"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/tv_wkup"
-            android:layout_width="60dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="149dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="36dp"
             android:text="@string/tv_wkup"
             android:textStyle="bold"
+            app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_wk"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintEnd_toStartOf="@+id/tv_wkuptime"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_wkuptime"
-            android:layout_width="251dp"
-            android:layout_height="21dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="106dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="52dp"
             android:text="TextView"
+            app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.958"
-            app:layout_constraintStart_toEndOf="@+id/tv_wkup"
-            app:layout_constraintTop_toBottomOf="@+id/tv_wkvalue"
-            app:layout_constraintVertical_bias="0.081" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/tv_slp"
-            android:layout_width="68dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="20dp"
             android:text="@string/tv_slp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_wk"
-            app:layout_constraintVertical_bias="0.0" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/tv_wkup"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_slptime"
-            android:layout_width="251dp"
-            android:layout_height="21dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="107dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
             android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:autoSizeTextType="uniform"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.958"
-            app:layout_constraintStart_toEndOf="@+id/tv_wkup"
-            app:layout_constraintTop_toBottomOf="@+id/tv_wkvalue"
-            app:layout_constraintVertical_bias="0.081" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_slp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_wkvalue" />
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="246dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_topic"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/tv_wtvalue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

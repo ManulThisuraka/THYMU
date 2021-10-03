@@ -9,18 +9,27 @@ import android.widget.Button;
 
 public class waterView extends AppCompatActivity {
 
-    Button btn;
+    Button btn_view, btn_insert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_water_view);
 
-        btn = findViewById(R.id.btn_waterview);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn_view = findViewById(R.id.btn_waterview);
+        btn_insert = findViewById(R.id.btn_getstart);
+        btn_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(waterView.this, myPlan.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_insert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(waterView.this, waterInsert.class);
                 startActivity(intent);
             }
         });

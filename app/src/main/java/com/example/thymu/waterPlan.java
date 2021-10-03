@@ -3,10 +3,10 @@ package com.example.thymu;
 public class waterPlan {
 
     private String weight;
-    private String workoutHrs;
+    private String workoutMins;
     private String wakeupTime;
     private String bedTime;
-    private double drinkTarget;
+    private Double drinkTarget;
 
     public waterPlan() {
 
@@ -16,9 +16,9 @@ public class waterPlan {
     }
     public void setWeight(String weight){ this.weight = weight;
     }
-    public  String getWorkoutHrs(){ return workoutHrs;
+    public  String getWorkoutMins(){ return workoutMins;
     }
-    public void setWorkoutHrs(String workoutHrs){ this.workoutHrs = workoutHrs;
+    public void setWorkoutMins(String workoutMins){ this.workoutMins = workoutMins;
     }
     public String getWakeupTime(){
 
@@ -28,13 +28,21 @@ public class waterPlan {
 
         this.wakeupTime = wakeupTime;
     }
-    public CharSequence getBedTime(){
+    public String getBedTime(){
 
         return bedTime;
     }
     public void setBedTime(String bedTime){
 
         this.bedTime = bedTime;
+    }
+
+    public double getDrinkTarget(){
+        return drinkTarget;
+    }
+
+    public  void setDrinkTarget(double drinkTarget){
+        this.drinkTarget = drinkTarget;
     }
 
 }

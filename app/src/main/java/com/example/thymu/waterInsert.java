@@ -1,5 +1,7 @@
 package com.example.thymu;
 
+import static java.lang.Integer.parseInt;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
@@ -58,7 +60,7 @@ public class waterInsert extends AppCompatActivity {
 
         // below line is used to get reference for our database.
         String uid = FirebaseAuth.getInstance().getUid();
-        //databaseReference = firebaseDatabase.getReference().child("waterPlan").child(uid);
+
         databaseReference = firebaseDatabase.getReference().child("waterPlan").child(uid);
 
         // initializing our object
@@ -76,16 +78,22 @@ public class waterInsert extends AppCompatActivity {
                 String wakeupTime = btn_wakeUP.getText().toString();
                 String bedTime = btn_sleeping.getText().toString();
 
+                int weight1 = Integer.parseInt(weight);
+                int workout1 = Integer.parseInt(workout);
+                //double cal1 = 0.6 * weight1;
+                //double cal2 = 0.4 * workout1;
+                double drinkTarget = (0.6 * weight1) + (0.4 * workout1);
+
                 // below line is for checking weather the
                 // edittext fields are empty or not.
-                if (TextUtils.isEmpty(weight) && TextUtils.isEmpty(workout)) {
+                if (TextUtils.isEmpty(weight) || TextUtils.isEmpty(workout)) {
                     // if the text fields are empty
                     // then show the below message.
                     Toast.makeText(waterInsert.this, "Please add some data.", Toast.LENGTH_SHORT).show();
                 } else {
                     // else call the method to add
                     // data to our database.
-                    addDatatoFirebase(weight,workout,wakeupTime,bedTime);
+                    addDatatoFirebase(weight,workout,wakeupTime,bedTime,drinkTarget);
 
                     Intent intent = new Intent(waterInsert.this, waterView.class);
                     startActivity(intent);
@@ -94,12 +102,13 @@ public class waterInsert extends AppCompatActivity {
         });
     }
 
-    public void addDatatoFirebase(String weight, String workout, String wakeupTime,String bedTime) {
+    public void addDatatoFirebase(String weight, String workout, String  wakeupTime,String  bedTime,double drinkTarget) {
 
         water_plan.setWeight(weight);
-        water_plan.setWorkoutHrs(workout);
+        water_plan.setWorkoutMins(workout);
         water_plan.setWakeupTime(wakeupTime);
         water_plan.setBedTime(bedTime);
+        water_plan.setDrinkTarget(drinkTarget);
 
         DatabaseReference newref = databaseReference.push();
         newref.setValue(water_plan);
@@ -121,7 +130,7 @@ public class waterInsert extends AppCompatActivity {
                     }
                 };
 
-                int style = AlertDialog.THEME_DEVICE_DEFAULT_LIGHT;
+                int style = AlertDialog.THEME_DEVICE_DEFAULT_DARK;
 
                 TimePickerDialog timePickerDialog = new TimePickerDialog(this, style, onTimeSetListener, hour, minute, true);
                 timePickerDialog.show();
@@ -142,7 +151,6 @@ public class waterInsert extends AppCompatActivity {
             timePickerDialog.show();
         }
     }
-
 
 
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.thymu"
-    android:theme="@style/Theme.THYMU.NoActionBar" >
+    android:theme="@style/Theme.THYMU.NoActionBar">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -23,6 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
+            android:name=".waterPop"
+            android:exported="true" />
+        <activity
             android:name=".UpdatePop"
             android:exported="true"
             android:theme="@style/Theme.THYMU.NoActionBar" />
@@ -32,6 +35,15 @@
             android:theme="@style/Theme.THYMU.NoActionBar" />
         <activity
             android:name=".InsertMedicine"
+            android:exported="true" />
+        <activity
+            android:name=".waterInsert"
+            android:exported="true" />
+        <activity
+            android:name=".waterView"
+            android:exported="true" />
+        <activity
+            android:name=".myPlan"
             android:exported="true" />
         <activity
             android:name=".updateMedicine"
@@ -52,19 +64,23 @@
             android:name=".expenses"
             android:exported="true"
             android:theme="@style/Theme.THYMU.NoActionBar" />
-        <activity android:name=".categories"
+        <activity
+            android:name=".categories"
             android:theme="@style/Theme.THYMU.NoActionBar" />
-        <activity android:name=".RegisterActivity"
+        <activity
+            android:name=".RegisterActivity"
             android:theme="@style/Theme.THYMU.NoActionBar" />
-        <activity android:name=".LoginActivity"
-            android:theme="@style/Theme.THYMU.NoActionBar" >
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.THYMU.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".person"
+        <activity
+            android:name=".person"
             android:theme="@style/Theme.THYMU.NoActionBar" />
     </application>
 

@@ -4,19 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_color"
     tools:context=".waterView"
     tools:layout_editor_absoluely="81dp">
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="90dp"
-        android:layout_height="44dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btn_waterview"
+        android:layout_width="289dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/background_btn"
+        android:text="@string/btn_waterview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="538dp"
+        android:layout_height="391dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:srcCompat="@drawable/ashblue" />
+
+    <Button
+        android:id="@+id/btn_getstart"
+        android:layout_width="166dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/background_btn"
+        android:text="@string/btn_getstart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="119dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipsesmall" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="63dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView40"
+        app:srcCompat="@drawable/ellipse100" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
