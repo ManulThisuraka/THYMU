@@ -80,5 +80,7 @@
     <string name="todo3">TODO</string>
     <string name="expenseTitle">"ADD NEW ACCOUNT OR VIEW PREVIOUS "</string>
     <string name="recycleDel">Delete</string>
+    <string name="btn_MEdi_delete">Delete</string>
+    <string name="btnMediUpdate">Update</string>
 
 </resources>
