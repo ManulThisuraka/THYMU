@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -46,7 +48,10 @@ public class InsertMedicine extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance("https://thymu-9c71c-default-rtdb.asia-southeast1.firebasedatabase.app/");
 
         // below line is used to get reference for our database.
-        databaseReference = firebaseDatabase.getReference().child("MedicineInfo");
+        String uid = FirebaseAuth.getInstance().getUid();
+
+
+        databaseReference = firebaseDatabase.getReference().child("MedicineInfo").child(uid);
 
         // initializing our object
         // class variable.
