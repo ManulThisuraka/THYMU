@@ -8,65 +8,64 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
     android:layout_marginTop="50dp"
-    android:layout_marginBottom="20dp"
+    android:layout_marginBottom="80dp"
     android:scrollbars="vertical"
-    app:cardBackgroundColor="@color/ash"
+    app:cardBackgroundColor="@color/bg_colorX"
     app:cardCornerRadius="40dp"
     app:layout_insetEdge="top"
-    tools:context=".deleteData">
+    tools:context=".waterCard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="379dp"
-        android:layout_height="337dp"
+        android:layout_width="388dp"
+        android:layout_height="504dp"
         android:background="@drawable/waterdrop"
         android:backgroundTint="#B5E6EC"
         android:backgroundTintMode="screen">
 
         <TextView
             android:id="@+id/tv_wt"
-            android:layout_width="103dp"
-            android:layout_height="41dp"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
             android:layout_marginTop="92dp"
             android:layout_marginEnd="8dp"
             android:text="@string/tv_wt"
+            android:textSize="20dp"
             android:textStyle="bold"
-            app:autoSizeTextType="uniform"
             app:layout_constraintEnd_toStartOf="@+id/tv_wtvalue"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_wtvalue"
-            android:layout_width="129dp"
-            android:layout_height="29dp"
-            android:layout_marginEnd="132dp"
+            android:layout_width="105dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="164dp"
             android:text="TextView"
-            app:autoSizeTextType="uniform"
+            android:textSize="20dp"
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_wt"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/tv_wk"
-            android:layout_width="299dp"
-            android:layout_height="29dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="237dp"
+            android:layout_height="45dp"
             android:layout_marginTop="12dp"
             android:text="@string/tv_wk"
+            android:textSize="20dp"
             android:textStyle="bold"
-            app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/tv_slp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_wt"
-            app:layout_constraintVertical_bias="0.08" />
+            app:layout_constraintVertical_bias="0.1" />
 
         <TextView
             android:id="@+id/tv_wkvalue"
             android:layout_width="95dp"
             android:layout_height="37dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="56dp"
             android:text="TextView"
-            app:autoSizeTextType="uniform"
+            android:textSize="20dp"
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_wk"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -74,50 +73,47 @@
             android:id="@+id/tv_wkup"
             android:layout_width="149dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginBottom="196dp"
             android:text="@string/tv_wkup"
             android:textStyle="bold"
-            app:autoSizeTextType="uniform"
+            android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_wkuptime"
-            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_wkuptime"
-            android:layout_width="106dp"
-            android:layout_height="29dp"
-            android:layout_marginEnd="104dp"
-            android:layout_marginBottom="52dp"
+            android:layout_width="112dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="124dp"
             android:text="TextView"
-            app:autoSizeTextType="uniform"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="20dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_wkup"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/tv_slp"
-            android:layout_width="127dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="20dp"
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="28dp"
             android:text="@string/tv_slp"
             android:textStyle="bold"
-            app:autoSizeTextType="uniform"
+            android:textSize="20dp"
             app:layout_constraintBottom_toTopOf="@+id/tv_wkup"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_slptime"
-            android:layout_width="107dp"
-            android:layout_height="31dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="121dp"
+            android:layout_height="37dp"
             android:layout_marginEnd="16dp"
             android:text="TextView"
-            app:autoSizeTextType="uniform"
+            android:textSize="20dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_slp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tv_slp"
-            app:layout_constraintTop_toBottomOf="@+id/tv_wkvalue" />
+            app:layout_constraintStart_toEndOf="@+id/tv_slp" />
 
         <TextView
             android:id="@+id/tv_topic"
@@ -125,7 +121,7 @@
             android:layout_height="42dp"
             android:layout_marginTop="16dp"
             android:text="@string/tv_topic"
-            app:autoSizeTextType="uniform"
+            android:textSize="30dp"
             app:layout_constraintBottom_toTopOf="@+id/tv_wtvalue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.458"
@@ -133,6 +129,34 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
+        <Button
+            android:id="@+id/btn_waterUpdate"
+            android:layout_width="239dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/background_btn"
+            android:text="Edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_wkuptime"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_waterdelete"
+            android:layout_width="231dp"
+            android:layout_height="43dp"
+            android:background="@drawable/background_btn"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_waterUpdate"
+            app:layout_constraintVertical_bias="0.45"
+            tools:ignore="TouchTargetSizeCheck" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
+

@@ -6,29 +6,148 @@
     android:layout_height="match_parent"
     tools:context=".waterPop">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="258dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="124dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="82dp"
+        android:padding="15dp"
+        android:background="@drawable/rectangle21"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName7"
-        android:layout_width="257dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="269dp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_weightPop"
+            android:layout_width="131dp"
+            android:layout_height="46dp"
+            android:layout_above="@+id/textView2"
+            android:background="@drawable/edittext_background"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="191dp"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="Name"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/et_workPop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+
+        <EditText
+            android:id="@+id/et_workPop"
+            android:layout_width="131dp"
+            android:layout_height="46dp"
+            android:layout_above="@+id/btn_popsleep"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/edittext_background"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="191dp"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Name"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_weightPop"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteY="269dp" />
+
+        <Button
+            android:id="@+id/btn_waterEdit"
+            android:layout_width="239dp"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_btn"
+            android:text="Edit"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_popwakeup"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="37dp"/>
+
+
+        <Button
+            android:id="@+id/btn_popsleep"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="37dp"
+            android:layout_toStartOf="@+id/btn_popwakeup" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="190dp"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="152dp"
+            android:text="Weight"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="190dp"
+            android:layout_height="33dp"
+            android:layout_above="@+id/et_workPop"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="-1dp"
+            android:text="workout minutes"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="62dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="163dp"
+            app:srcCompat="@drawable/food" />
+
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
