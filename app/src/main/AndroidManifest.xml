@@ -33,7 +33,8 @@
             android:exported="true" />
         <activity
             android:name=".MasterActivity"
-            android:exported="true" />
+            android:exported="true"
+            />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true" />
