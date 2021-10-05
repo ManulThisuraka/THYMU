@@ -19,6 +19,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView24" />
 
+    <Button
+        android:id="@+id/btn_dailydrink"
+        android:layout_width="289dp"
+        android:layout_height="56dp"
+        android:background="@drawable/background_btn"
+        android:text="@string/btn_dailydrink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_waterview"
+        app:layout_constraintVertical_bias="0.172" />
+
     <ImageView
         android:id="@+id/imageView24"
         android:layout_width="538dp"
@@ -37,10 +49,12 @@
         android:layout_marginTop="36dp"
         android:background="@drawable/background_btn"
         android:text="@string/btn_getstart"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.841"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
@@ -62,5 +76,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView40"
         app:srcCompat="@drawable/ellipse100" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="115dp"
+        android:layout_height="113dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="560dp"
+        android:src="@drawable/food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

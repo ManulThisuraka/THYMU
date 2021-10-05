@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class waterView extends AppCompatActivity {
 
-    Button btn_view, btn_insert;
+    Button btn_view, btn_insert, btn_drink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class waterView extends AppCompatActivity {
 
         btn_view = findViewById(R.id.btn_waterview);
         btn_insert = findViewById(R.id.btn_getstart);
+        btn_drink = findViewById(R.id.btn_dailydrink);
         btn_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +31,14 @@ public class waterView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(waterView.this, waterInsert.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_drink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(waterView.this, dailyDrink.class);
                 startActivity(intent);
             }
         });

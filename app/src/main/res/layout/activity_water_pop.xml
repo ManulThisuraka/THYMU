@@ -8,17 +8,16 @@
 
     <RelativeLayout
         android:id="@+id/relativelayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="391dp"
+        android:layout_height="500dp"
         android:layout_marginBottom="82dp"
-        android:padding="15dp"
         android:background="@drawable/rectangle21"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.007">
 
 
         <LinearLayout
@@ -29,17 +28,18 @@
 
         </LinearLayout>
 
+
         <EditText
             android:id="@+id/et_weightPop"
             android:layout_width="131dp"
-            android:layout_height="46dp"
-            android:layout_above="@+id/textView2"
-            android:background="@drawable/edittext_background"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn_waterEdit"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="46dp"
+            android:layout_marginStart="68dp"
             android:layout_marginEnd="191dp"
-            android:layout_marginBottom="18dp"
+            android:layout_marginBottom="245dp"
+            android:background="@drawable/edittext_background"
             android:ems="10"
             android:inputType="number"
             android:minHeight="48dp"
@@ -49,22 +49,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="TouchTargetSizeCheck" />
-
-
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/et_workPop"
             android:layout_width="131dp"
-            android:layout_height="46dp"
-            android:layout_above="@+id/btn_popsleep"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn_waterEdit"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/edittext_background"
-            android:layout_marginStart="46dp"
+            android:layout_marginStart="68dp"
             android:layout_marginEnd="191dp"
-            android:layout_marginBottom="18dp"
+            android:layout_marginBottom="145dp"
+            android:background="@drawable/edittext_background"
             android:ems="10"
             android:inputType="number"
             android:text="Name"
@@ -72,7 +69,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_weightPop"
-            tools:ignore="TouchTargetSizeCheck"
             tools:layout_editor_absoluteY="269dp" />
 
         <Button
@@ -89,50 +85,30 @@
             android:text="Edit"
             tools:ignore="TouchTargetSizeCheck" />
 
-        <Button
-            android:id="@+id/btn_popwakeup"
-            android:layout_width="wrap_content"
-            android:layout_height="42dp"
-            android:layout_above="@+id/btn_waterEdit"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="41dp"
-            android:layout_marginBottom="37dp"/>
-
-
-        <Button
-            android:id="@+id/btn_popsleep"
-            android:layout_width="wrap_content"
-            android:layout_height="42dp"
-            android:layout_above="@+id/btn_waterEdit"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="23dp"
-            android:layout_marginEnd="31dp"
-            android:layout_marginBottom="37dp"
-            android:layout_toStartOf="@+id/btn_popwakeup" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="190dp"
-            android:layout_height="33dp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_weightPop"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="89dp"
-            android:layout_marginEnd="152dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="219dp"
+            android:layout_marginBottom="17dp"
             android:text="Weight"
             android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="190dp"
-            android:layout_height="33dp"
+            android:layout_width="211dp"
+            android:layout_height="32dp"
             android:layout_above="@+id/et_workPop"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="152dp"
-            android:layout_marginBottom="-1dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginBottom="9dp"
             android:text="workout minutes"
             android:textSize="20dp" />
 
@@ -147,6 +123,68 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="163dp"
             app:srcCompat="@drawable/food" />
+
+        <TextView
+            android:id="@+id/tv_popwake"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="106dp"
+            android:text="wakeup time"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_popwake"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignTop="@+id/tv_popwake"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="65dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="232dp"
+            android:layout_marginBottom="46dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Name"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tv_popbed"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="227dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="102dp"
+            android:text="Bed time"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_popbed"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignTop="@+id/tv_popbed"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="198dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="46dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Name"
+            android:textAlignment="center"/>
 
 
     </RelativeLayout>

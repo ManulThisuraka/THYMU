@@ -1,10 +1,10 @@
 package com.example.thymu;
 
-import static java.lang.Integer.parseInt;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
+
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +25,8 @@ public class waterInsert extends AppCompatActivity {
     Button btn_wakeUP, btn_sleeping , btn_con;
     private EditText et_weight, et_workout;
     int hour, minute;
+    public static final int THEME_DEVICE_DEFAULT_DARK = 4;
+
 
 
 
@@ -78,11 +80,7 @@ public class waterInsert extends AppCompatActivity {
                 String wakeupTime = btn_wakeUP.getText().toString();
                 String bedTime = btn_sleeping.getText().toString();
 
-                int weight1 = Integer.parseInt(weight);
-                int workout1 = Integer.parseInt(workout);
-                //double cal1 = 0.6 * weight1;
-                //double cal2 = 0.4 * workout1;
-                double drinkTarget = (0.6 * weight1) + (0.4 * workout1);
+
 
                 // below line is for checking weather the
                 // edittext fields are empty or not.
@@ -93,6 +91,10 @@ public class waterInsert extends AppCompatActivity {
                 } else {
                     // else call the method to add
                     // data to our database.
+                    int weight1 = Integer.parseInt(weight);
+                    int workout1 = Integer.parseInt(workout);
+
+                    double drinkTarget = (((0.6 * weight1) + (0.4 * workout1))/2)*29.5735;
                     addDatatoFirebase(weight,workout,wakeupTime,bedTime,drinkTarget);
 
                     Intent intent = new Intent(waterInsert.this, waterView.class);
@@ -130,7 +132,7 @@ public class waterInsert extends AppCompatActivity {
                     }
                 };
 
-                int style = AlertDialog.THEME_DEVICE_DEFAULT_DARK;
+                int style = THEME_DEVICE_DEFAULT_DARK;
 
                 TimePickerDialog timePickerDialog = new TimePickerDialog(this, style, onTimeSetListener, hour, minute, true);
                 timePickerDialog.show();
@@ -145,7 +147,7 @@ public class waterInsert extends AppCompatActivity {
                 }
             };
 
-            int style = AlertDialog.THEME_DEVICE_DEFAULT_DARK;
+            int style = THEME_DEVICE_DEFAULT_DARK ;
 
             TimePickerDialog timePickerDialog = new TimePickerDialog(this, style, onTimeSetListener, hour, minute, true);
             timePickerDialog.show();

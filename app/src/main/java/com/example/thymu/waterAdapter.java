@@ -37,8 +37,6 @@ import java.util.Map;
 
 class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.waterViewholder> {
 
-    int hour,minute;
-
 
     public waterAdapter(
             @NonNull FirebaseRecyclerOptions<waterPlan> options) {
@@ -65,12 +63,13 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
                 holder.workout.setText(model.getWorkoutMins());
                 holder.wakeupTime.setText((model.getWakeupTime()));
                 holder.bedTime.setText((model.getBedTime()));
+                holder.dailyDrink.setText(toString().valueOf(model.getDrinkTarget())) ;
 
 
             }
         }
 
-        /////////////////////////////update///////////////////////////////////////////////////////////////////////
+     ///////////////////////////////////////////update///////////////////////////////////////////////////////////////////////
 
         holder.btn_edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,13 +86,10 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
 
                 EditText weight = view.findViewById(R.id.et_weightPop);
                 EditText workout = view.findViewById(R.id.et_workPop);
-                Button wakeup = view.findViewById(R.id.btn_popwakeup);
-                Button sleep = view.findViewById(R.id.btn_popsleep);
-
+                EditText wakeup = view.findViewById(R.id.et_popwake);
+                EditText sleep = view.findViewById(R.id.et_popbed);
 
                 Button btnUpdate = view.findViewById(R.id.btn_waterEdit);
-                Button btn_wakeup = view.findViewById(R.id.btn_popwakeup);
-                Button btn_sleep = view.findViewById(R.id.btn_popsleep);
 
                 weight.setText(model.getWeight());
                 workout.setText(model.getWorkoutMins());
@@ -111,6 +107,15 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
                         map.put("workoutMins", workout.getText().toString());
                         map.put("wakeupTime", wakeup.getText().toString());
                         map.put("bedTime", sleep.getText().toString());
+
+                        String weight1 = weight.getText().toString();
+                        String workout1 = workout.getText().toString();
+
+                        int weight2 = Integer.parseInt(weight1);
+                        int workout2 = Integer.parseInt(workout1);
+
+                        double drinkTarget = (((0.6 * weight2) + (0.4 * workout2))/2)*29.5735;
+                        map.put("drinkTarget", drinkTarget);
 
 
                         //.child(getRef(position).getKey())
@@ -139,19 +144,17 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
                                     }
                                 });
 
-
                     }
                 });
-
-
-
 
             }
 
         });
 
 
-        /////////////////////////////////////////delete////////////////////////////////////////////////
+
+
+    ///////////////////////////////////////////////delete///////////////////////////////////////////////////////////////////////
 
         holder.btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -180,10 +183,9 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
 
 
 
-
     }
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     // Function to tell the class about the Card view (here
@@ -203,7 +205,7 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
     class waterViewholder
             extends RecyclerView.ViewHolder {
 
-        TextView weight, workout, wakeupTime, bedTime;
+        TextView weight, workout, wakeupTime, bedTime, dailyDrink;
         Button btn_edit, btn_delete;
 
 
@@ -214,6 +216,11 @@ class waterAdapter extends FirebaseRecyclerAdapter<waterPlan, waterAdapter.water
             workout = itemView.findViewById(R.id.tv_wkvalue);
             wakeupTime = itemView.findViewById(R.id.tv_wkuptime);
             bedTime = itemView.findViewById(R.id.tv_slptime);
+            dailyDrink = itemView.findViewById(R.id.tv_dailyDrink);
+
+
+            btn_edit = itemView.findViewById(R.id.btn_waterUpdate);
+            btn_delete = itemView.findViewById(R.id.btn_waterdelete);
 
         }
 

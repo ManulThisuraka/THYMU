@@ -23,6 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
+            android:name=".dailyDrink"
+            android:exported="true" />
+        <activity
             android:name=".waterPop"
             android:exported="true" />
         <activity

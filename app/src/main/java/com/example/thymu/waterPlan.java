@@ -8,6 +8,7 @@ public class waterPlan {
     private String bedTime;
     private Double drinkTarget;
 
+
     public waterPlan() {
 
     }
@@ -41,8 +42,13 @@ public class waterPlan {
         return drinkTarget;
     }
 
-    public  void setDrinkTarget(double drinkTarget){
+    public void setDrinkTarget(double drinkTarget){
+
         this.drinkTarget = drinkTarget;
     }
+
+
+
+
 
 }

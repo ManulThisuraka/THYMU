@@ -104,10 +104,15 @@
     <string name="tv_wk">Workout minuts per day :</string>
     <string name="tv_slp">Bed time :</string>
     <string name="btn_waterview">my plan</string>
+    <string name="btn_dailydrink">Daily Drink</string>
     <string name="tv_topic">My Water Plan</string>
     <string name="btn_getstart">GET STARTED</string>
     <string name="btn_wateredit">Edit</string>
     <string name="btn_popwakeup">Wakeup time</string>
     <string name="btn_popsleep">Bed time</string>
+    <string name="tv_daily">Daily Drink/ml=</string>
+    <string name="tv_dailyDrink"></string>
+    <string name="tv_popwake">Wakeup time</string>
+    <string name="tv_popbed">Bed time</string>
 
 </resources>
