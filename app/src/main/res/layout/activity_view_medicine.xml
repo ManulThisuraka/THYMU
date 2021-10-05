@@ -14,28 +14,33 @@
         android:layout_marginBottom="308dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/path1" />
 
     <ImageView
         android:id="@+id/imageView32"
-        android:layout_width="87dp"
-        android:layout_height="90dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView33"
+        android:layout_width="106dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView31"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/ellipse1" />
 
     <ImageView
         android:id="@+id/imageView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="156dp"
+        android:layout_width="93dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="132dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView30"
-        app:layout_constraintEnd_toStartOf="@+id/imageView31"
-        app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ellipse2" />
 
     <TextView
@@ -56,23 +61,22 @@
         android:id="@+id/textView6"
         android:layout_width="291dp"
         android:layout_height="44dp"
-        android:layout_marginTop="12dp"
-        android:textColor="#000000"
-        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:text="@string/sub_medicine_title" />
 
     <ImageView
         android:id="@+id/imageView31"
-        android:layout_width="194dp"
-        android:layout_height="179dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
+        android:layout_width="205dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/wavy1" />
 

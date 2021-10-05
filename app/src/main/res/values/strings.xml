@@ -82,5 +82,6 @@
     <string name="recycleDel">Delete</string>
     <string name="btn_MEdi_delete">Delete</string>
     <string name="btnMediUpdate">Update</string>
+    <string name="nameMedicine">Name of your medicine ?</string>
 
 </resources>
