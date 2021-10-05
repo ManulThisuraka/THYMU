@@ -59,7 +59,8 @@
     <string name="btn_view_medcine">VIEW MEDICINES</string>
     <string name="btn_add_medcine">Add new medicines</string>
     <string name="insert_titile_medi">Insert medicine information</string>
-    <string name="title_medicine">Name of the drug</string>
+    <string name="title_medicine">Name of the drug ?</string>
+
     <string name="input_name_medicine">Name of the medicine</string>
     <string name="input_resaon">What are  you taking for it ?</string>
     <string name="input_healthcondition">Type your condition</string>
