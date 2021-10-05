@@ -14,6 +14,7 @@ public class categories extends AppCompatActivity {
 
     public ImageButton img_btn;
     public ImageButton btn_med;
+    public ImageButton btn_spend;
 
     public Button btnLogout;
     FirebaseAuth mAuth;
@@ -41,6 +42,16 @@ public class categories extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_spend = findViewById(R.id.imageButton4);
+        btn_spend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(categories.this,SplashScreenActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         btnLogout = findViewById(R.id.btnLogout2);
         mAuth = FirebaseAuth.getInstance();
