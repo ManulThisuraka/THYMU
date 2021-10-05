@@ -82,9 +82,10 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="76dp"
         android:background="@drawable/rrectangle4"
+        app:srcCompat="@drawable/menstrualcycle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:srcCompat="@drawable/menstrualcycle"
+
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
