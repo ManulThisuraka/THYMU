@@ -79,12 +79,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="115dp"
-        android:layout_height="113dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="560dp"
+        android:layout_width="104dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="40dp"
         android:src="@drawable/food"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

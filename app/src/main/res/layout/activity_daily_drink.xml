@@ -21,51 +21,51 @@
         android:id="@+id/et_today"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="400dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_today" />
 
     <EditText
         android:id="@+id/et_todayDrink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_todayDrink"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_today"
         android:layout_width="175dp"
         android:layout_height="36dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:text="Today is:"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/et_today"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/tv_todayDrink"
         android:layout_width="290dp"
         android:layout_height="33dp"
         android:layout_marginTop="76dp"
-        android:text="Enter amount you drink now :"
+        android:text="Enter amount you drink now/ml :"
         android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_drinkadd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,14 +75,14 @@
         android:id="@+id/btn_drinkadd"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/background_btn"
         android:text="+"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toEndOf="@+id/et_todayDrink" />
 
     <TextView

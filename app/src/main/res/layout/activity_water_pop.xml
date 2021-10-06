@@ -10,7 +10,6 @@
         android:id="@+id/relativelayout"
         android:layout_width="391dp"
         android:layout_height="500dp"
-        android:layout_marginBottom="82dp"
         android:background="@drawable/rectangle21"
         android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
