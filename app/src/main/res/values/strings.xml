@@ -99,4 +99,38 @@
         <item>Other</item>
     </string-array>
 
+
+    <string name="et_weight" />
+    <string name="tv_weight">Your Weight/kg</string>
+    <string name="tv_waterPlan">Water Plan</string>
+    <string name="tv_workout">How Many Minutes Do you Workout Per Day?</string>
+    <string name="et_workout" />
+    <string name="btn_wakeUp">wakeup time</string>
+    <string name="btn_sleeping">bed time</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_wakeUP">wakeup time</string>
+    <string name="tv_wakeup">WakeUpTime</string>string>
+    <string name="tv_bed">BedTime</string>
+    <string name="tv_wake">weight:</string>
+    <string name="tv_work">Workout minutes per day:</string>
+    <string name="tv_waketime">Wakeup Time</string>
+    <string name="tv_w">Weight :</string>
+    <string name="tv_workmins">Workout Minutes Per day :</string>
+    <string name="tv_wkup">Wakeup Time :</string>
+    <string name="tv_wt">Weight/kg :</string>
+    <string name="tv_wkmins">Workout minutes per day :</string>
+    <string name="tv_wk">Workout minuts per day :</string>
+    <string name="tv_slp">Bed time :</string>
+    <string name="btn_waterview">my plan</string>
+    <string name="btn_dailydrink">Daily Drink</string>
+    <string name="tv_topic">My Water Plan</string>
+    <string name="btn_getstart">GET STARTED</string>
+    <string name="btn_wateredit">Edit</string>
+    <string name="btn_popwakeup">Wakeup time</string>
+    <string name="btn_popsleep">Bed time</string>
+    <string name="tv_daily">Daily Drink/ml=</string>
+    <string name="tv_dailyDrink"></string>
+    <string name="tv_popwake">Wakeup time</string>
+    <string name="tv_popbed">Bed time</string>
+
 </resources>

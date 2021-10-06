@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".waterPop">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="391dp"
+        android:layout_height="500dp"
+        android:background="@drawable/rectangle21"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_weightPop"
+            android:layout_width="131dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="191dp"
+            android:layout_marginBottom="245dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="Name"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/et_workPop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_workPop"
+            android:layout_width="131dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="191dp"
+            android:layout_marginBottom="145dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Name"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_weightPop"
+            tools:layout_editor_absoluteY="269dp" />
+
+        <Button
+            android:id="@+id/btn_waterEdit"
+            android:layout_width="239dp"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_btn"
+            android:text="Edit"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_weightPop"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="219dp"
+            android:layout_marginBottom="17dp"
+            android:text="Weight"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="211dp"
+            android:layout_height="32dp"
+            android:layout_above="@+id/et_workPop"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginBottom="9dp"
+            android:text="workout minutes"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="62dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="163dp"
+            app:srcCompat="@drawable/food" />
+
+        <TextView
+            android:id="@+id/tv_popwake"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="106dp"
+            android:text="wakeup time"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_popwake"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignTop="@+id/tv_popwake"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="65dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="232dp"
+            android:layout_marginBottom="46dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Name"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tv_popbed"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="227dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="102dp"
+            android:text="Bed time"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_popbed"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_above="@+id/btn_waterEdit"
+            android:layout_alignTop="@+id/tv_popbed"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="198dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="46dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Name"
+            android:textAlignment="center"/>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

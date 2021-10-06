@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_workout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:textAlignment="center"
+    tools:context=".waterInsert">
+
+    <Button
+        android:id="@+id/btn_sleeping"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="139dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="116dp"
+        android:onClick="onClick"
+        android:text="@string/btn_sleeping"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:backgroundTint="@color/design_default_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toEndOf="@+id/btn_wakeUP" />
+
+    <Button
+        android:id="@+id/btn_wakeUP"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="153dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="112dp"
+        android:onClick="onClick"
+        android:text="@string/btn_wakeUP"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:backgroundTint="@color/design_default_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="586dp"
+        android:layout_height="472dp"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="-120dp"
+        android:layout_marginEnd="-12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ashblue" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="143dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_weight"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_waterPlan"
+        android:layout_width="237dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/tv_waterPlan"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="112dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_waterPlan"
+        app:srcCompat="@drawable/ellipse100" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35"
+        app:srcCompat="@drawable/ellipsebig" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="249dp"
+        android:layout_height="47dp"
+        android:text="@string/tv_workout"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_weight" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="174dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_waterPlan"
+        app:srcCompat="@drawable/water" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="239dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/background_btn"
+        android:text="@string/btn_continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_workout"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        android:text="@string/tv_wakeup"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView31"
+        app:layout_constraintEnd_toStartOf="@+id/textView31"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="99dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/tv_bed"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

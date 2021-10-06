@@ -14,6 +14,7 @@ public class categories extends AppCompatActivity {
 
     public ImageButton img_btn;
     public ImageButton btn_med;
+    public  ImageButton btn_water;
     public ImageButton btn_spend;
 
     public Button btnLogout;
@@ -23,6 +24,15 @@ public class categories extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
+
+        btn_water = findViewById(R.id.img_btn_water);
+        btn_water.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(categories.this, waterView.class);
+                startActivity(intent);
+            }
+        });
 
         img_btn = findViewById(R.id.imageButton);
         img_btn.setOnClickListener(new View.OnClickListener() {

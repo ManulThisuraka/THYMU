@@ -45,6 +45,12 @@
             android:name=".ReadMedicine"
             android:exported="true" />
         <activity
+            android:name=".dailyDrink"
+            android:exported="true" />
+        <activity
+            android:name=".waterPop"
+            android:exported="true" />
+        <activity
             android:name=".UpdatePop"
             android:exported="true"
             android:theme="@style/Theme.THYMU.NoActionBar" />
@@ -54,6 +60,15 @@
             android:theme="@style/Theme.THYMU.NoActionBar" />
         <activity
             android:name=".InsertMedicine"
+            android:exported="true" />
+        <activity
+            android:name=".waterInsert"
+            android:exported="true" />
+        <activity
+            android:name=".waterView"
+            android:exported="true" />
+        <activity
+            android:name=".myPlan"
             android:exported="true" />
         <activity
             android:name=".updateMedicine"

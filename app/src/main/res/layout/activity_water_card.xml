@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="80dp"
+    android:scrollbars="vertical"
+    app:cardBackgroundColor="@color/bg_colorX"
+    app:cardCornerRadius="40dp"
+    app:layout_insetEdge="top"
+    tools:context=".waterCard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="385dp"
+        android:layout_height="553dp"
+        android:background="@drawable/waterdrop"
+        android:backgroundTint="#B5E6EC"
+        android:backgroundTintMode="screen">
+
+        <TextView
+            android:id="@+id/tv_wt"
+            android:layout_width="135dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="56dp"
+            android:text="@string/tv_wt"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_slp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_wtvalue"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wtvalue"
+            android:layout_width="105dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="124dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_wt"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wk"
+            android:layout_width="237dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/tv_wk"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_slp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_wt"
+            app:layout_constraintVertical_bias="0.714" />
+
+        <TextView
+            android:id="@+id/tv_wkvalue"
+            android:layout_width="95dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="44dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_wk"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wkup"
+            android:layout_width="149dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="188dp"
+            android:text="@string/tv_wkup"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_wkuptime"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wkuptime"
+            android:layout_width="115dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="104dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_wkup"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_slp"
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tv_slp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_wkup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_slptime"
+            android:layout_width="121dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_slp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_slp" />
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="246dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_topic"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_wtvalue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_waterUpdate"
+            android:layout_width="227dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/background_btn"
+            android:text="Edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_wkuptime"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_waterdelete"
+            android:layout_width="231dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/background_btn"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_waterUpdate"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv_daily"
+            android:layout_width="178dp"
+            android:layout_height="58dp"
+            android:text="@string/tv_daily"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_dailyDrink"
+            app:layout_constraintEnd_toStartOf="@+id/tv_dailyDrink"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_dailyDrink"
+            android:layout_width="117dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="56dp"
+            android:text="TextView"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_wtvalue"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
