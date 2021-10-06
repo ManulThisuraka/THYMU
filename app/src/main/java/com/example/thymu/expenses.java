@@ -46,6 +46,7 @@ public class expenses extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         btnDelete = findViewById(R.id.btnDelete);
         btnDelete.setOnClickListener(view -> {
             DatabaseReference ref = FirebaseDatabase.getInstance("https://thymu-9c71c-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference();

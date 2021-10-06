@@ -24,7 +24,7 @@ public class viewMedicine extends AppCompatActivity {
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(viewMedicine.this, updateMedicine.class);
+                Intent intent = new Intent(viewMedicine.this, ReadMedicine.class);
                 startActivity(intent);
             }
         });

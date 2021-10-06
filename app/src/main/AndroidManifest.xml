@@ -23,6 +23,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.THYMU">
         <activity
+            android:name=".HistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WeekSpendingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TodaySpendingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MasterActivity"
+            android:exported="true"
+            />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Medicine"
+            android:exported="true" />
+        <activity
+            android:name=".ReadMedicine"
+            android:exported="true" />
+        <activity
             android:name=".dailyDrink"
             android:exported="true" />
         <activity

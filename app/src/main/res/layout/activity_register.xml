@@ -123,6 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
         android:text="Already registered"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/tvLoginHere"
         app:layout_constraintEnd_toEndOf="parent"

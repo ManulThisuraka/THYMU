@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E69F4E"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/img_background_today_spent"
+        android:layout_width="425dp"
+        android:layout_height="407dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="628dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29"
+        app:srcCompat="@drawable/orangeround" />
+
+    <TextView
+        android:id="@+id/txv_welcome"
+        android:layout_width="237dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="90dp"
+        android:text="Welcome!"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_welcome"
+        android:layout_width="264dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/currency" />
+
+    <TextView
+        android:id="@+id/txv_outflows"
+        android:layout_width="308dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:text="Cash Outflows in Control..."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_background_today_spent" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="199dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/background_btn"
+        android:text="START"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

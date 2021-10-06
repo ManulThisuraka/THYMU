@@ -59,7 +59,8 @@
     <string name="btn_view_medcine">VIEW MEDICINES</string>
     <string name="btn_add_medcine">Add new medicines</string>
     <string name="insert_titile_medi">Insert medicine information</string>
-    <string name="title_medicine">Name of the drug</string>
+    <string name="title_medicine">Name of the drug ?</string>
+
     <string name="input_name_medicine">Name of the medicine</string>
     <string name="input_resaon">What are  you taking for it ?</string>
     <string name="input_healthcondition">Type your condition</string>
@@ -80,6 +81,23 @@
     <string name="todo3">TODO</string>
     <string name="expenseTitle">"ADD NEW ACCOUNT OR VIEW PREVIOUS "</string>
     <string name="recycleDel">Delete</string>
+    <string name="btn_MEdi_delete">Delete</string>
+    <string name="btnMediUpdate">Update</string>
+    <string name="nameMedicine">Name of your medicine ?</string>
+
+    <string-array name="items">
+        <item>Select item</item>
+        <item>Transport</item>
+        <item>Food</item>
+        <item>House</item>
+        <item>Entertainment</item>
+        <item>Education</item>
+        <item>Charity</item>
+        <item>Apparel</item>
+        <item>Health</item>
+        <item>Personal</item>
+        <item>Other</item>
+    </string-array>
 
 
     <string name="et_weight" />
